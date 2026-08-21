@@ -48,7 +48,8 @@ Run the following commands in your terminal to download, compile, and execute th
  git clone [https://github.com/YourUsername/Mudra-Engine.git](https://github.com/YourUsername/Mudra-Engine.git)
     cd Mudra-Engine
 
-  g++ -std=c++17 main.cpp MudraEngine.cpp -o mudra_engine
+    g++ -std=c++17 main.cpp -o mudra_app
 
-  ./mudra_engine       # For Mac or Linux
-  .\mudra_engine.exe   # For Windows (PowerShell)
+    ./mudra_app
+
+  
