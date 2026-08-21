@@ -1,4 +1,4 @@
-#include "MudraEngine.h"
+#include "MudraEngine.cpp"
 
 int main() {
     MudraEngine mudra;
@@ -65,16 +65,14 @@ int main() {
         return 1;
     }
 
-    // Start Interactive Terminal Interface
+    // Starting Interactive Terminal Interface
     mudra.start_interactive_mode();
 
     return 0;
 }
 
+/*    g++ -std=c++17 main.cpp -o mudra_app
 
+      ./mudra_app
 
-/*    g++ -std=c++17 main.cpp MudraEngine.cpp -o mudra_app
-
-      ./mudra_app    
-
- */     
+ */
