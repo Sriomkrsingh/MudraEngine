@@ -15,7 +15,7 @@ However, trading Brazilian Real to US Dollars, and then US Dollars to Indian Rup
 
 ## 🧠 How the Algorithm and Maths Work
 
-Standard pathfinding **algorithms** (like Dijkstra's) are designed to *add* distances together. But in finance, exchange rates are *multiplied*. You cannot just plug currency rates into a standard algorithm. 
+Standard pathfinding **algorithms(like Dijkstra's)** are designed to *add* distances together. But in finance, exchange rates are *multiplied*. You cannot just plug currency rates into a standard algorithm. 
 
 To solve this, I **engineered** a mathematical trick using Logarithms:
 
@@ -31,12 +31,13 @@ By feeding these negative logarithms into the algorithm, Mudra Engine mathematic
 
 * **Engineered Routing:** **Developed** a custom version of Dijkstra’s Algorithm in C++ to instantly explore thousands of possible currency routes.
 * **Smart Memory:** Built an instant memory cache so if a user asks for the same route twice, the engine remembers the answer in zero seconds.
-* **Real-World Fees:** The network understands that trading Currency A to Currency B has a different fee than trading B to A (just like real banks).
+* **Real-World Fees:** The network understands that trading Currency A to Currency B (just like real banks).
 * **Dynamic Data:** Reads market rates easily from a `rates.csv` file, meaning you can update the world's economy without rewriting a single line of C++ code.
 
 ## 🛠️ How to Run on Your Machine
 
-This project was **engineered** using standard C++17 with no messy external libraries to install. 
+This project was **engineered** using standard C++17,STL, Graph Theory, Data Structures
+& Algorithm, Caching ,Object-Oriented Programming. 
 
 Run the following commands in your terminal to download, compile, and execute the engine:
 
@@ -45,11 +46,11 @@ Run the following commands in your terminal to download, compile, and execute th
 ### 2. Compile the C++ code
 ### 3. Run the program (Use the command for your OS)
 ```bash
- git clone [https://github.com/YourUsername/Mudra-Engine.git](https://github.com/YourUsername/Mudra-Engine.git)
-    cd Mudra-Engine
+    1. git clone https://github.com/Sriomkrsingh/MudraEngine.git
+       cd MudraEngine
 
-    g++ -std=c++17 main.cpp -o mudra_app
+    2. g++ -std=c++17 main.cpp -o mudra_app
 
-    ./mudra_app
+    3. ./mudra_app
 
   
